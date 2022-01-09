@@ -34,7 +34,7 @@ nodecore.register_craft({
 		nodes = {
 			{
 				match = {
-					metal_temper_cool = true,
+					lode_temper_cool = true,
 					groups = {chisel = true}
 				},
 				dig = true
@@ -53,7 +53,7 @@ nodecore.register_limited_abm({
 		chance = 2,
 		limited_max = 100,
 		nodenames = {modname .. ":carved"},
-		neighbors = {"nc_concrete:coalstone_wet_source"},
+		neighbors = {"nc_concrete:coalaggregate_wet_source"},
 		action = function(pos, node)
 			nodecore.set_loud(pos, {name = modname .. ":sealed"})
 		end
