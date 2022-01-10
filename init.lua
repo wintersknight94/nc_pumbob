@@ -53,7 +53,7 @@ nodecore.register_limited_abm({
 		chance = 2,
 		limited_max = 100,
 		nodenames = {modname .. ":carved"},
-		neighbors = {"nc_concrete:coalaggregate_wet_source"},
+		neighbors = {"nc_concrete:coalaggregate_wet_source","nc_concrete:coalaggregate_wet_flowing"},
 		action = function(pos, node)
 			nodecore.set_loud(pos, {name = modname .. ":sealed"})
 		end
